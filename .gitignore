@@ -64,7 +64,6 @@ ios/ShoutemApp/Images.xcassets/Image.imageset/background.png
 # Android/IntelliJ
 #
 .idea
-.gradle
 *.iml
 
 # node.js
