@@ -1,0 +1,14 @@
+{
+  "name": "shoutem.persist",
+  "version": "2.2.0-build1581931291398",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "@react-native-community/async-storage": "~1.6.3",
+    "@shoutem/redux-io": "3.0.1-beta.3",
+    "redux-persist": "^4.1.0"
+  },
+  "nativeDependencies": [
+    "@react-native-community/async-storage"
+  ]
+}

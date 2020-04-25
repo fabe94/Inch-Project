@@ -1,0 +1,7 @@
+{
+  "name": "shoutem.redux",
+  "version": "2.2.0-build1581931462393",
+  "dependencies": {
+    "@shoutem/redux-io": "3.0.1-beta.3"
+  }
+}

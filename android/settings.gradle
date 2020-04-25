@@ -1,0 +1,43 @@
+rootProject.name = 'ShoutemApp'
+include ':shoutem.web-view'
+project(':shoutem.web-view').projectDir = new File(rootProject.projectDir, '../extensions/shoutem.web-view/app/android')
+include ':shoutem.social'
+project(':shoutem.social').projectDir = new File(rootProject.projectDir, '../extensions/shoutem.social/app/android')
+include ':shoutem.shopify'
+project(':shoutem.shopify').projectDir = new File(rootProject.projectDir, '../extensions/shoutem.shopify/app/android')
+include ':shoutem.places'
+project(':shoutem.places').projectDir = new File(rootProject.projectDir, '../extensions/shoutem.places/app/android')
+include ':shoutem.loyalty'
+project(':shoutem.loyalty').projectDir = new File(rootProject.projectDir, '../extensions/shoutem.loyalty/app/android')
+include ':shoutem.ical-events'
+project(':shoutem.ical-events').projectDir = new File(rootProject.projectDir, '../extensions/shoutem.ical-events/app/android')
+include ':shoutem.flurry-analytics'
+project(':shoutem.flurry-analytics').projectDir = new File(rootProject.projectDir, '../extensions/shoutem.flurry-analytics/app/android')
+include ':shoutem.events'
+project(':shoutem.events').projectDir = new File(rootProject.projectDir, '../extensions/shoutem.events/app/android')
+include ':shoutem.cms'
+project(':shoutem.cms').projectDir = new File(rootProject.projectDir, '../extensions/shoutem.cms/app/android')
+include ':shoutem.camera'
+project(':shoutem.camera').projectDir = new File(rootProject.projectDir, '../extensions/shoutem.camera/app/android')
+include ':shoutem.auth'
+project(':shoutem.auth').projectDir = new File(rootProject.projectDir, '../extensions/shoutem.auth/app/android')
+include ':shoutem.audio'
+project(':shoutem.audio').projectDir = new File(rootProject.projectDir, '../extensions/shoutem.audio/app/android')
+include ':shoutem.application'
+project(':shoutem.application').projectDir = new File(rootProject.projectDir, '../extensions/shoutem.application/app/android')
+//NativeModuleInjectionMark-gradle-settings
+
+include ':app', ':react-native-code-push'
+project(':react-native-code-push').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-code-push/android/app')
+
+include ':react-native-fbsdk'
+project(':react-native-fbsdk').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fbsdk/android')
+include ':react-native-maps'
+project(':react-native-maps').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-maps/lib/android')
+
+
+// packages above this line are added automatically when shoutem configure
+// is run - they should be discarded before pushing changes in this file
+
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'

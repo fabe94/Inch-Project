@@ -1,0 +1,14 @@
+{
+  "name": "shoutem.news",
+  "version": "2.2.2-build1582708789285",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "@shoutem/redux-io": "3.0.1-beta.3",
+    "@shoutem/theme": "~0.11.5",
+    "@shoutem/ui": "~2.0.0"
+  },
+  "nativeDependencies": [
+    "@shoutem/ui"
+  ]
+}

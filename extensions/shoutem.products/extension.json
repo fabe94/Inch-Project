@@ -1,0 +1,53 @@
+{
+  "name": "products",
+  "version": "2.2.2",
+  "platform": "2.2.*",
+  "title": "Products",
+  "description": "Show products with purchase link",
+  "categories": [
+    "commerce"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shoutem/extensions"
+  },
+  "icon": "server/assets/add-products-image.png",
+  "dependencies": [
+    "shoutem.cms"
+  ],
+  "shortcuts": [
+    {
+      "name": "openProductsList",
+      "title": "Products",
+      "screen": "@.ProductsList",
+      "icon": "theme://cart.png",
+      "adminPages": [
+        {
+          "page": "shoutem.cms.CmsPage",
+          "title": "Content",
+          "parameters": {
+            "schema": "@.Products"
+          }
+        }
+      ],
+      "settings": {
+        "defaultShortcutTitle": "Products",
+        "extensionTitle": "Products"
+      }
+    }
+  ],
+  "screens": [
+    {
+      "name": "ProductsList"
+    },
+    {
+      "name": "ProductDetails"
+    }
+  ],
+  "dataSchemas": [
+    {
+      "name": "Products",
+      "path": "./server/data-schemas/Products.json"
+    }
+  ]
+}

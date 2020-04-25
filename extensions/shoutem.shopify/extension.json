@@ -1,0 +1,144 @@
+{
+  "name": "shopify",
+  "title": "Shopify",
+  "version": "2.2.3",
+  "platform": "2.2.*",
+  "icon": "./server/assets/add-shopify-image.png",
+  "description": "Sell from your Shopify store",
+  "dependencies": [
+    "shoutem.layouts"
+  ],
+  "categories": [
+    "commerce"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shoutem/extensions"
+  },
+  "shortcuts": [
+    {
+      "title": "Shop",
+      "description": "Show your products and let the users buy them",
+      "icon": "theme://cart.png",
+      "name": "openProducts",
+      "screen": "@.ProductsListScreen",
+      "adminPages": [
+        {
+          "page": "@.ShopifyPage",
+          "title": "Content"
+        },
+        {
+          "page": "shoutem.layouts.LayoutPage",
+          "title": "Layout"
+        }
+      ]
+    }
+  ],
+  "screens": [
+    {
+      "name": "ProductsFeaturedTallGridScreen",
+      "title": "Tall Grid with Featured Product",
+      "image": "./server/assets/screens/featured-tall-grid.png",
+      "extends": "@.ProductsListScreen",
+      "settings": {
+        "listType": "tall-grid",
+        "hasFeaturedItem": true
+      }
+    },
+    {
+      "name": "ProductsTallGridScreen",
+      "title": "Tall Grid",
+      "image": "./server/assets/screens/tall-grid.png",
+      "extends": "@.ProductsListScreen",
+      "settings": {
+        "listType": "tall-grid",
+        "hasFeaturedItem": false
+      }
+    },
+    {
+      "name": "ProductsFeaturedGridScreen",
+      "title": "Square Grid with Featured Product",
+      "image": "./server/assets/screens/featured-square-grid.png",
+      "extends": "@.ProductsListScreen",
+      "settings": {
+        "listType": "square-grid",
+        "hasFeaturedItem": true
+      }
+    },
+    {
+      "name": "ProductsGridScreen",
+      "title": "Square Grid",
+      "image": "./server/assets/screens/square-grid.png",
+      "extends": "@.ProductsListScreen",
+      "settings": {
+        "listType": "square-grid",
+        "hasFeaturedItem": false
+      }
+    },
+    {
+      "name": "ProductsFeaturedListScreen",
+      "title": "List with Featured Product",
+      "image": "./server/assets/screens/featured-list.png",
+      "extends": "@.ProductsListScreen",
+      "settings": {
+        "listType": "list",
+        "hasFeaturedItem": true
+      }
+    },
+    {
+      "name": "ProductsListScreen",
+      "title": "List",
+      "image": "./server/assets/screens/list.png",
+      "settings": {
+        "listType": "list",
+        "hasFeaturedItem": false
+      }
+    },
+    {
+      "name": "ProductDetailsScreen"
+    },
+    {
+      "name": "SearchProductsScreen"
+    },
+    {
+      "name": "CartScreen"
+    },
+    {
+      "name": "CheckoutScreen"
+    },
+    {
+      "name": "ShippingMethodScreen"
+    },
+    {
+      "name": "PaymentScreen"
+    },
+    {
+      "name": "OrderCompleteScreen"
+    },
+    {
+      "name": "WebCheckoutScreen"
+    }
+  ],
+  "pages": [
+    {
+      "name": "ShopifyPage",
+      "type": "react-page"
+    },
+    {
+      "name": "ShopifySettingsPage",
+      "type": "react-page"
+    }
+  ],
+  "settingsPages": [
+    {
+      "page": "@.ShopifySettingsPage",
+      "title": "Settings"
+    }
+  ],
+  "dataSchemas": [
+    {
+      "name": "Shopify",
+      "path": "server/data-schemas/Shopify.json"
+    }
+  ]
+}

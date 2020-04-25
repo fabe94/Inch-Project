@@ -1,0 +1,16 @@
+{
+  "name": "application",
+  "version": "2.2.4",
+  "platform": "2.2.*",
+  "type": "system",
+  "title": "Application",
+  "description": "System Shoutem extension that initializes and configures the application",
+  "icon": "server/assets/add-application-image.png",
+  "categories": [],
+  "native": true,
+  "screens": [
+    {
+      "name": "SubscriptionMissingScreen"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "redux",
+  "version": "2.2.0",
+  "platform": "2.2.*",
+  "title": "Redux",
+  "description": "Redux integration",
+  "icon": "server/assets/add-redux-image.png",
+  "type": "system",
+  "categories": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shoutem/extensions"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "shoutem.shopify",
+  "version": "2.2.3-build1582708981929",
+  "dependencies": {
+    "@shoutem/redux-io": "3.0.1-beta.3",
+    "@shoutem/theme": "~0.11.5",
+    "@shoutem/ui": "~2.0.0",
+    "apollo-cache-inmemory": "^1.1.12",
+    "apollo-client": "^2.2.8",
+    "apollo-client-preset": "^1.0.8",
+    "apollo-link-context": "^1.0.8",
+    "apollo-link-http": "^1.5.4",
+    "axios": "^0.18.0",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.9.1",
+    "shopify-buy": "1.4.0",
+    "world-countries": "^1.8.1"
+  },
+  "nativeDependencies": [
+    "@shoutem/ui"
+  ]
+}
